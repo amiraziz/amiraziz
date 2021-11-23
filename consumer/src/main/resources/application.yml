@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        onReceive-in-0:
+          destination: uppercase-values-topic
+          group: consumer
+        onReceive-out-0:
+          destination: uppercase-response
+      rabbit:
+        bindings:
+          onReceive-in-0:
+            consumer:
+              auto-bind-dlq: true
+              enableDlq: true
+              dlqTtl: 5000
+              republishToDlq: true
+server:
+  port: 2020

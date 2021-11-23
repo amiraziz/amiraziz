@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: consumer
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      connectionTimeout: 3000000
+      idleTimeout: 120000
+      leakDetectionThreshold: 6000000
+      maximumPoolSize: 20
+      minimumIdle: 2
+    url: jdbc:oracle:thin:@172.31.104.196:1531:AFRAORA19
+    username: STG_CORESWITCH
+    password: STG_CORESWITCH@saDdF$#
+  cloud:
+    stream:
+      bindings:
+        receiveResponse-in-0:
+          destination: uppercase-response
+          group: processor
+          consumer:
+            maxAttempts: 10
+      rabbit:
+        bindings:
+          receiveResponse-in-0:
+            consumer:
+              auto-bind-dlq: true
+              enableDlq: true
+              dlqTtl: 5000
+              republishToDlq: true
+server:
+  port: 2032
+instanceId: ${spring.application.name}:${spring.application.instance_id:${random.int}}
