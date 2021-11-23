@@ -1,4 +1,4 @@
-package ir.jiring.downlowded.cloud.demo;
+package ir.amiraziz.cloud.processor;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

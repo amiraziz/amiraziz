@@ -1,11 +1,11 @@
-package ir.jiring.downlowded.cloud.demo;
+package ir.amiraziz.cloud.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringCloudStreamProducerApplication {
+public class SpringCloudStreamConsumerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudStreamProducerApplication.class, args);
+        SpringApplication.run(SpringCloudStreamConsumerApplication.class, args);
     }
 }

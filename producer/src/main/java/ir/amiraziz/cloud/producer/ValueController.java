@@ -1,6 +1,5 @@
-package ir.jiring.downlowded.cloud.demo;
+package ir.amiraziz.cloud.producer;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.AmqpApplicationContextClosedException;
 import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.context.annotation.Bean;
@@ -30,6 +29,7 @@ public class ValueController {
     public Function<String, String> receiveResponse() {
         return (value) -> {
             if (true) {
+                /*for test maxAttempt in dlq*/
                 throw new AmqpApplicationContextClosedException("x");
             }
             return value;

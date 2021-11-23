@@ -1,4 +1,4 @@
-package ir.jiring.downlowded.cloud.demo;
+package ir.amiraziz.cloud.processor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;

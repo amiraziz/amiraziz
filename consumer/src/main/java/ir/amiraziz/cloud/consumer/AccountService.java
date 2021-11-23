@@ -1,4 +1,4 @@
-package ir.jiring.downlowded.cloud.demo;
+package ir.amiraziz.cloud.consumer;
 
 import org.springframework.stereotype.Component;
 
