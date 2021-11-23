@@ -1,17 +1,6 @@
 spring:
   application:
     name: consumer
-  datasource:
-    driver-class-name: oracle.jdbc.OracleDriver
-    hikari:
-      connectionTimeout: 3000000
-      idleTimeout: 120000
-      leakDetectionThreshold: 6000000
-      maximumPoolSize: 20
-      minimumIdle: 2
-    url: jdbc:oracle:thin:@172.31.104.196:1531:AFRAORA19
-    username: STG_CORESWITCH
-    password: STG_CORESWITCH@saDdF$#
   cloud:
     stream:
       bindings:
