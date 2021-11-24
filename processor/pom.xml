@@ -8,7 +8,7 @@
 		<version>2.5.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>ir.jiring.downlowded.cloud</groupId>
+	<groupId>ir.amiraziz.cloud</groupId>
 	<artifactId>process</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <properties>
